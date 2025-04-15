@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+.venv/
+env/
+.env/
+virtualenv/
+__pypackages__/
+*.egg-info/
+*.egg
+
+# Distributions / Packaging
+dist/
+build/
+sdist/
+*.dist-info/
+*.wheel
+*.whl
+
+# Log and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+*.dump
+*.DS_Store # macOS folder metadata
+Thumbs.db  # Windows thumbnail cache
+
+# Editor and IDE related files - VS Code specific
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
