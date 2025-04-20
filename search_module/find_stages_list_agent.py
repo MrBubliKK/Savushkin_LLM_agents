@@ -1,15 +1,14 @@
 import logging
 from dataclasses import dataclass
 
-from sc_client.models import ScAddr, ScTemplate
-from sc_client.constants import sc_types
-from sc_client.client import template_search
+from sc_client.models import ScAddr, ScTemplate, ScLinkContent, ScLinkContentType, ScConstruction
+from sc_client.constants import sc_types, sc_type
+from sc_client.client import template_search, generate_elements
 from sc_kpm import ScKeynodes, ScAgentClassic, ScResult
 from sc_kpm.identifiers import Idtf
 from sc_kpm.sc_sets import ScSet, ScStructure
-from sc_kpm.utils import get_element_system_identifier, search_element_by_non_role_relation, get_link_content_data
+from sc_kpm.utils import get_element_system_identifier, search_element_by_non_role_relation, get_link_content_data, create_link
 from sc_kpm.utils.action_utils import (
-    create_action_result,
     finish_action_with_status,
     get_action_arguments,
     generate_action_result,
@@ -137,7 +136,11 @@ class FindStagesListAgent(ScAgentClassic):
 
         
         result_string = '\n'.join(result_strings)
-        print(result_string)
+        # print(result_string)
+
+        link = create_link(result_string)
+
+        generate_action_result(action_node, link)
         
         return ScResult.OK
     

@@ -16,5 +16,4 @@ class SearchModuleIdentifiers:
     ACTION_FIND_NOT_MAX_CLASS: Idtf = "action_find_not_max_class"
     ACTION_FIND_KEY_SC_ELEMENT: Idtf = "action_find_key_sc_element"
     ACTION_FIND_PARENT_DECOMPOSITION: Idtf = "action_find_parent_decomposition"
-    ACTION_FIND_STAGES_LIST: Idtf = "action_find_stages_list"
-    PROCEDURE_STARTING_IMAGE: Idtf = ""
+    ACTION_FIND_STAGES_LIST: Idtf = "action_find_stages_list"   
