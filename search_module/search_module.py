@@ -9,6 +9,10 @@ from .find_not_max_class_agent import FindNotMaxClassAgent
 from .find_key_sc_element_agent import FindKeyScElementAgent
 from .find_parent_decomposition_agent import FindParentDecompositionAgent
 from .find_stages_list_agent import FindStagesListAgent
+from .find_stages_list_recipe_agent import FindStagesListRecipeAgent
+from .find_stages_list_serum_separation_agent import FindStagesListSerumSeparationAgent
+from .find_stages_list_serum_pumping_agent import FindStagesListSerumPumpingAgent
+
 from .call_agent import CallAgent
 
 
@@ -25,5 +29,8 @@ class SearchModule(ScModule):
             FindNotMaxClassAgent(),
             FindKeyScElementAgent(),
             FindParentDecompositionAgent(),
-            FindStagesListAgent()
+            FindStagesListAgent(),
+            FindStagesListRecipeAgent(),
+            FindStagesListSerumSeparationAgent(),
+            FindStagesListSerumPumpingAgent(),
         )

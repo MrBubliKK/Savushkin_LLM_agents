@@ -17,3 +17,6 @@ class SearchModuleIdentifiers:
     ACTION_FIND_KEY_SC_ELEMENT: Idtf = "action_find_key_sc_element"
     ACTION_FIND_PARENT_DECOMPOSITION: Idtf = "action_find_parent_decomposition"
     ACTION_FIND_STAGES_LIST: Idtf = "action_find_stages_list"   
+    ACTION_FIND_STAGES_LIST_RECIPE: Idtf = "action_find_stages_list_recipe"
+    ACTION_FIND_STAGES_LIST_SERUM_SEPARATION: Idtf = "action_find_stages_list_serum_separation"
+    ACTION_FIND_STAGES_LIST_SERUM_PUMPING: Idtf = "action_find_stages_list_serum_pumping"
